@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OneViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhn-RB-fhV">
+                    <rect key="frame" x="161" y="238" width="92" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="SvH-Ku-2qZ"/>
+                        <constraint firstAttribute="width" constant="92" id="o11-9o-Vfc"/>
+                    </constraints>
+                    <state key="normal" title="这是一级页面">
+                        <color key="titleColor" systemColor="systemOrangeColor"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe3-wh-5DF">
+                    <rect key="frame" x="154" y="411" width="107" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="bCf-Fy-FUc"/>
+                    </constraints>
+                    <state key="normal" title="点我跳转"/>
+                    <connections>
+                        <action selector="jumpToNextEvent:" destination="-1" eventType="touchUpInside" id="YYk-Nr-D0r"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tab1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOh-rI-6W4">
+                    <rect key="frame" x="186" y="154" width="32" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="VB6-20-rgc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cOh-rI-6W4" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="186" id="Cdn-Ng-Cd8"/>
+                <constraint firstItem="qhn-RB-fhV" firstAttribute="top" secondItem="cOh-rI-6W4" secondAttribute="bottom" constant="63" id="QmG-Mt-4Y4"/>
+                <constraint firstItem="qe3-wh-5DF" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="154" id="brG-PZ-PdO"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="qe3-wh-5DF" secondAttribute="trailing" constant="153" id="cw6-C4-5x9"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="cOh-rI-6W4" secondAttribute="trailing" constant="196" id="oKC-bZ-xXH"/>
+                <constraint firstItem="qe3-wh-5DF" firstAttribute="top" secondItem="qhn-RB-fhV" secondAttribute="bottom" constant="143" id="tz5-Np-nK5"/>
+                <constraint firstItem="qhn-RB-fhV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vFu-kk-ltb"/>
+                <constraint firstItem="cOh-rI-6W4" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="110" id="vKO-4U-I9c"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

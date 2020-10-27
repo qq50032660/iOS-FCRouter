@@ -1,0 +1,23 @@
+[
+  {
+    "clsName" : "OneViewController",
+    "title" : "tab1",
+    "visitorInfo" : {
+    },
+    "imageName" : "home"
+  },
+  {
+    "clsName" : "TwoViewController",
+    "title" : "tab2",
+    "visitorInfo" : {
+    },
+    "imageName" : "classification"
+  },
+  {
+    "clsName" : "ThreeViewController",
+    "title" : "tab3",
+    "visitorInfo" : {
+    },
+    "imageName" : "usercenter"
+  }
+]

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Route</key>
+	<dict>
+		<key>Private</key>
+		<dict>
+			<key>three</key>
+			<string>ThreeViewController</string>
+			<key>twodetail</key>
+			<string>TwoDetailViewController</string>
+			<key>two</key>
+			<string>TwoViewController</string>
+			<key>onedetail</key>
+			<string>OneDetailViewController</string>
+			<key>one</key>
+			<string>OneViewController</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
